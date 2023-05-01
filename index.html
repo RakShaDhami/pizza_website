@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petuk - A Pizza Online Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header class="top py-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+            <div class="container justify-content-lg-between justify-content-start">
+                <a class="navbar-brand" href="#"><img src="photo/brand-logo.svg" alt="" width="147"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu pb-0 border">
+                                <li><a class="dropdown-item py-2" href="#">About</a></li>
+                                <li class="drop"><a class="dropdown-item py-2" href="#">Restaurants</a>
+                                    <ul>
+                                        <li><a class="dropdown-item py-2" href="#">Restaurants</a></li>
+                                        <li><a class="dropdown-item py-2" href="#">Restaurants col1</a></li>
+                                        <li><a class="dropdown-item py-2" href="#">Restaurants detials</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="#">Faq</a></li>
+                                <li><a class="dropdown-item py-2" href="#">Gallery</a></li>
+                                <li><a class="dropdown-item py-2" href="#">Our Chefs</a></li>
+                                <li><a class="dropdown-item py-2" href="#">Privacy policy </a></li>
+                                <li><a class="dropdown-item py-2" href="#">Term & Condition</a></li>
+                                <li><a class="dropdown-item py-2" href="#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shops
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu pb-0 border">
+                                <li><a class="dropdown-item py-2" href="#">Pizza Blog</a></li>
+                                <li><a class="dropdown-item py-2" href="#">Blog Details</a></li>
+                                <li><a class="dropdown-item py-2" href="#">Author</a></li>
+                                <li><a class="dropdown-item py-2" href="#">Category</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center me-4">
+                    <div class="border-end border-primary pe-4">
+                        <p class="mb-0 fs-6">call for order</p>
+                        <h4 class="mb-0 fs-5 fw-bold">(123)-000-000</h4>
+                    </div>
+                    <div class="d-flex gap-3 ps-4 fs-3">
+                        <i class="bi bi-cart"></i>
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar end -->
+    <!-- banner big pizza start -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 rotate order-lg-2">
+                    <img src="photo/hero-image.png" alt="">
+                </div>
+                <div class="col-lg-6 round">
+                    <p> <i class="bi bi-truck fs-4"></i> Fastest Delivery Guaranteed</p>
+                    <h1 class="fs-1">Welcome to <span> PETUK </span> Restaurant</h1>
+                    <h4>Get 10% instant off for all order and $200 signup bonus today for new registration!</h4>
+                    <div class="button">
+                        <a href=""><img src="photo/play-store.svg" alt=""></a>
+                        <a href=""><img src="photo/apps-store.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner big pizza end -->
+
+    <!-- offter start -->
+
+    <div class="container my-5 offer">
+        <h2 class="text-center fw-bold display-1 mb-5">Weekly Pizza Offer</h2>
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+
+                        <ul>
+                            <li><i class="bi bi-heart fs-4"></i></li>
+                            <li> <i class="bi bi-cloud-arrow-down-fill fs-4"></i></li>
+                            <li> <i class="bi bi-search fs-4"></i></li>
+                        </ul>
+
+                        <div class="card border-0 shadow">
+                            <img src="photo/1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4> Mushroom pizza</h4>
+                                    <h5>$12.00</h5>
+                                    <div class="product-count mb-3">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" tabindex="0" fdprocessedid="l6az33">
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <a class="btn btn-primary btn-sm" href="/cart" tabindex="0"><i
+                                            class="bi bi-cart-plus pe-3"></i><span class="fw-bold">Add to
+                                            cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <ul>
+                            <li><i class="bi bi-heart fs-4"></i></li>
+                            <li> <i class="bi bi-cloud-arrow-down-fill fs-4"></i></li>
+                            <li> <i class="bi bi-search fs-4"></i></li>
+                        </ul>
+                        <div class="card border-0 shadow">
+                            <img src="photo/2.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Olive Pizza</h4>
+                                    <h5>$11.00</h5>
+                                    <div class="product-count mb-3">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" tabindex="0" fdprocessedid="l6az33">
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <a class="btn btn-primary btn-sm" href="/cart" tabindex="0"><i
+                                            class="bi bi-cart-plus pe-3"></i><span class="fw-bold">Add to
+                                            cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li><i class="bi bi-heart fs-4"></i></li>
+                            <li> <i class="bi bi-cloud-arrow-down-fill fs-4"></i></li>
+                            <li> <i class="bi bi-search fs-4"></i></li>
+                        </ul>
+                        <div class="card border-0 shadow">
+                            <img src="photo/3.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4> Sauce Pizza</h4>
+                                    <h5>$18.00</h5>
+                                    <div class="product-count mb-3">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" tabindex="0" fdprocessedid="l6az33">
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <a class="btn btn-primary btn-sm" href="/cart" tabindex="0"><i
+                                            class="bi bi-cart-plus pe-3"></i><span class="fw-bold">Add to
+                                            cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li><i class="bi bi-heart fs-4"></i></li>
+                            <li> <i class="bi bi-cloud-arrow-down-fill fs-4"></i></li>
+                            <li> <i class="bi bi-search fs-4"></i></li>
+                        </ul>
+                        <div class="card border-0 shadow">
+                            <img src="photo/4.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Chicken Pizza</h4>
+                                    <h5>$9.99</h5>
+                                    <div class="product-count mb-3">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" tabindex="0" fdprocessedid="l6az33">
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <a class="btn btn-primary btn-sm" href="/cart" tabindex="0"><i
+                                            class="bi bi-cart-plus pe-3"></i><span class="fw-bold">Add to
+                                            cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li><i class="bi bi-heart fs-4"></i></li>
+                            <li> <i class="bi bi-cloud-arrow-down-fill fs-4"></i></li>
+                            <li> <i class="bi bi-search fs-4"></i></li>
+                        </ul>
+                        <div class="card border-0 shadow">
+                            <img src="photo/5.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4> Mushroom pizza</h4>
+                                    <h5>$12.00</h5>
+                                    <div class="product-count mb-3">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" tabindex="0" fdprocessedid="l6az33">
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <a class="btn btn-primary btn-sm" href="/cart" tabindex="0"><i
+                                            class="bi bi-cart-plus pe-3"></i><span class="fw-bold">Add to
+                                            cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li><i class="bi bi-heart fs-4"></i></li>
+                            <li> <i class="bi bi-cloud-arrow-down-fill fs-4"></i></li>
+                            <li> <i class="bi bi-search fs-4"></i></li>
+                        </ul>
+                        <div class="card border-0 shadow">
+                            <img src="photo/6.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4> Mushroom pizza</h4>
+                                    <h5>$12.00</h5>
+                                    <div class="product-count mb-3">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" tabindex="0" fdprocessedid="l6az33">
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <a class="btn btn-primary btn-sm" href="/cart" tabindex="0"><i
+                                            class="bi bi-cart-plus pe-3"></i><span class="fw-bold">Add to
+                                            cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li><i class="bi bi-heart fs-4"></i></li>
+                            <li> <i class="bi bi-cloud-arrow-down-fill fs-4"></i></li>
+                            <li> <i class="bi bi-search fs-4"></i></li>
+                        </ul>
+                        <div class="card border-0 shadow">
+                            <img src="photo/7.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4> Mushroom pizza</h4>
+                                    <h5>$12.00</h5>
+                                    <div class="product-count mb-3">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" tabindex="0" fdprocessedid="l6az33">
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <a class="btn btn-primary btn-sm" href="/cart" tabindex="0"><i
+                                            class="bi bi-cart-plus pe-3"></i><span class="fw-bold">Add to
+                                            cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offer end -->
+
+    <!-- stores start -->
+    <section class="store">
+        <div class="container overflow-hidden">
+            <div class="d-flex justify-content-between title">
+                <h2>Nearby Stores</h2>
+                <a href="" class="btn"></i>View All <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="green"><a href="" class="btn fw-lighter fs-6"><i class="bi bi-truck"></i> <span>Free
+                                    Delivery</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="orange"><a href="" class="btn fw-lighter"><i class="bi bi-patch-check"></i>
+                                <span>15% Off</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="orange"><a href="" class="btn fw-lighter"><i class="bi bi-patch-check"></i>
+                                <span>15% Off</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="orange"><a href="" class="btn fw-lighter"><i class="bi bi-patch-check"></i>
+                                <span>15% Off</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="green"><a href="" class="btn fw-lighter fs-6"><i class="bi bi-truck"></i> <span>Free
+                                    Delivery</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="green"><a href="" class="btn fw-lighter fs-6"><i class="bi bi-truck"></i> <span>Free
+                                    Delivery</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="orange"><a href="" class="btn fw-lighter"><i class="bi bi-patch-check"></i>
+                                <span>15% Off</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="orange"><a href="" class="btn fw-lighter"><i class="bi bi-patch-check"></i>
+                                <span>15% Off</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="photo/1.jpg" alt="...">
+                        <div class="orange"><a href="" class="btn fw-lighter"><i class="bi bi-patch-check"></i>
+                                <span>15% Off</span></a></div>
+                        <div class="card-body">
+                            <h4>Star Fast Food</h4>
+                            <p class="card-text py-3">Pizza,Desserts,Asian</p>
+                            <div class="d-flex justify-content-between card-text">
+                                <p class="fw-bold">Delivery Fee:$10</p> <span><i
+                                        class="bi bi-star-fill pe-2"></i>5.00/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- stores end -->
+
+    <!-- 3 step delivery start -->
+    <section class="step">
+        <div class="container">
+            <h2 class="text-center">3 Steps Delivery</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="circle mb-4">
+                        <img src="photo/order-step-icon1.svg" alt="">
+                    </div>
+                    <h4 class="py-2">Choose your food</h4>
+                    <p>The wanted wow statement pile a windshield we a often for to tired met.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="circle mb-4">
+                        <img src="photo/order-step-icon2.svg" alt="">
+                    </div>
+                    <h4 class="py-2">Choose your food</h4>
+                    <p>The wanted wow statement pile a windshield we a often for to tired met.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="circle mb-4">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/ac08baf1e2fa86c4bdd511a465bd9473786f85d0/42be6/assets/images/order-step-icon3.svg"
+                            alt="">
+                    </div>
+                    <h4 class="py-2">Choose your food</h4>
+                    <p>The wanted wow statement pile a windshield we a often for to tired met.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3 step delivery end -->
+
+    <!-- Fastes delivery area start -->
+    <section class="delivery ">
+        <div class="container">
+            <h2 class="text-center">Fastest Delivery</h2>
+            <div class="row gx-3">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="box d-flex align-items-center">
+                        <div class="circle">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/410245a192b4d598036d08360002956643351381/d03ee/assets/images/order-outline-con1.svg"
+                                alt="">
+                        </div>
+                        <div class="px-5">
+                            <h4 class="py-2">Choose your food</h4>
+                            <p>One with to of and behave. That onto and she desires a concept of through with when
+                                reached will so you</p>
+                        </div>
+                    </div>
+                    <div class="box d-flex justify-content-between align-items-center">
+                        <div class="circle">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/610d09e174d292f5d5f2b57be173040e67c33064/472cb/assets/images/order-outline-con2.svg"
+                                alt="">
+                        </div>
+                        <div class="px-5">
+                            <h4 class="py-2">Choose your food</h4>
+                            <p>The wanted wow statement pile a windshield we a often for to tired met.</p>
+                        </div>
+                    </div>
+                    <div class="box d-flex justify-content-between align-items-center">
+                        <div class="circle">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/4cca27c232204e1152d274c5917e30b75529382b/1cca2/assets/images/order-outline-con3.svg"
+                                alt="">
+                        </div>
+                        <div class="px-5">
+                            <h4 class="py-2">Choose your food</h4>
+                            <p>The wanted wow statement pile a windshield we a often for to tired met.</p>
+                        </div>
+                    </div>
+                    <div class="box d-flex justify-content-between align-items-center">
+                        <div class="circle">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/29a08bbfe7778b5a61c2143d4e365183087bdc3f/dbfea/assets/images/order-outline-con4.svg"
+                                alt="">
+                        </div>
+                        <div class="px-5">
+                            <h4 class="py-2">Choose your food</h4>
+                            <p>The wanted wow statement pile a windshield we a often for to tired met.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <img src="photo/delivery-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fastes delivery area end -->
+
+    <!-- hidden bg area start  -->
+    <section class="hidden-bg py-lg-11 py-8 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <div class="box text-center">
+                        <span class="badge bg-success mb-1">
+                            FREE DELIVERY
+                        </span>
+                        <h2 class="mb-2">Cheese Pizza Available</h2>
+                        <p class="text-white mb-5">That he high longer even sitting more the was agency; Law, does thin
+                            for a details warp</p>
+                        <a href="/shop" class="btn btn-primary">Find restaurant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hidden bg area start  -->
+
+    <!-- About us area start -->
+    <section class="about-us">
+        <div class="container">
+            <div class="row gx-4">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="box">
+                        <img src="https://html-petuk.netlify.app/assets/images/about-image.jpg" alt="">
+                        <div class="call-center d-flex">
+                            <div class="phonering">
+                                <div class="phonering-circle"></div>
+                                <div class="phonering-circle-fill"></div>
+                                <div class="phonering-circle-icon"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box1 mx-5">
+<h2 class="my-5">We hate Bate!</h2>
+<h4>Pizza delivery is a huge industry and Petuk is the most established company in this sector.</h4>
+<p class="my-5">Due to our experience in this industry and our wide customer base, we are offering our customers a complete service.</p>
+<p class="my-3"><span><i class="bi bi-check-circle-fill pe-2 fs-5"></i></span> The let design still holding shudder</p>
+<p class="my-3"><span><i class="bi bi-check-circle-fill pe-2 fs-5"></i></span> Have himself quietly doubting to the its</p>
+<p class="my-3"><span><i class="bi bi-check-circle-fill pe-2 fs-5"></i></span> Parents started of with to college remember</p>
+<p class="my-3"><span><i class="bi bi-check-circle-fill pe-2 fs-5"></i></span> Have himself quietly doubting to the its to bear attentive</p>
+
+</div>
+         </div>
+            </div>
+        </div>
+
+    </section>
+     <!-- About us area end -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+</body>
+</body>
+
+</html>
